@@ -1,0 +1,49 @@
+body {
+    display: flex; 
+    justify-content: center; /*centrar horizontal*/
+    align-items: center;  /* centrar vertical, pero! para que tenga efecto, hay que anadir la siguiente linea:*/
+    height: 100vh;
+
+    background-color: rgb(12, 27, 80);
+}
+
+.calculator {
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.screen {
+    width: 224px;
+    background-color: rgb(176, 205, 176);
+    font-size: 40px;
+    text-align: end;
+    padding: 4px;
+}
+
+.buttons {
+    width: 232px;
+
+    /*para q los butones ocupen todo el spacio de la calculadora*/
+    display: flex;  /* ... para q funcione hay q poner la linea siguente*/
+    flex-wrap: wrap; /*clave para q no se salgan de la calculadora...?? */
+}
+  
+button {    /*coge todos los button, por la etiqueta, no por la clase.*/
+    background-color: rgb(131, 129, 129);
+    border: none;
+    color: rgb(255, 255, 255); /* para q sea blanco*/
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;   /* Para q los botones sean circulares, crea cuadrado de widht y height iguales (50x50, p ej) y pon un border-radius que sea la mitad (aqui, 25), eso convertira el boton en circular.  */
+    margin: 4px;
+}
+
+#clear {        /*To override the previous general css in buttons */
+    width: 100%;
+    background-color: rgb(3, 3, 19);
+    font-size: 30px;
+}
+
+
