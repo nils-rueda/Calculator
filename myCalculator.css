@@ -26,7 +26,7 @@ body {
 
     /*para q los butones ocupen todo el spacio de la calculadora*/
     display: flex;  /* ... para q funcione hay q poner la linea siguente*/
-    flex-wrap: wrap; /*clave para q no se salgan de la calculadora...?? */
+    flex-wrap: wrap; /*clave para q no se salgan de la calculadora. */
 }
   
 button {    /*coge todos los button, por la etiqueta, no por la clase.*/
@@ -40,7 +40,7 @@ button {    /*coge todos los button, por la etiqueta, no por la clase.*/
     margin: 4px;
 }
 
-#clear {        /*To override the previous general css in buttons */
+#clear {     /*To override the previous general css in buttons */
     width: 100%;
     background-color: rgb(3, 3, 19);
     font-size: 30px;
